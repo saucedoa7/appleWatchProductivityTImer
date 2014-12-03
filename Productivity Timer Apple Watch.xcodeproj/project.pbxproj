@@ -14,6 +14,14 @@
 		507859981A2D5BAE0088AEC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507859971A2D5BAE0088AEC8 /* Images.xcassets */; };
 		5078599B1A2D5BAE0088AEC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507859991A2D5BAE0088AEC8 /* LaunchScreen.xib */; };
 		507859A71A2D5BAE0088AEC8 /* Productivity_Timer_Apple_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507859A61A2D5BAE0088AEC8 /* Productivity_Timer_Apple_WatchTests.swift */; };
+		507859B71A2D5BBF0088AEC8 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507859B61A2D5BBF0088AEC8 /* WatchKit.framework */; };
+		507859BD1A2D5BBF0088AEC8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507859BC1A2D5BBF0088AEC8 /* InterfaceController.swift */; };
+		507859BF1A2D5BBF0088AEC8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507859BE1A2D5BBF0088AEC8 /* NotificationController.swift */; };
+		507859C11A2D5BBF0088AEC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507859C01A2D5BBF0088AEC8 /* Images.xcassets */; };
+		507859C51A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 507859C41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app */; };
+		507859CC1A2D5BBF0088AEC8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507859CB1A2D5BBF0088AEC8 /* Interface.storyboard */; };
+		507859CE1A2D5BBF0088AEC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507859CD1A2D5BBF0088AEC8 /* Images.xcassets */; };
+		507859D11A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 507859B41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,35 @@
 			remoteGlobalIDString = 507859871A2D5BAE0088AEC8;
 			remoteInfo = "Productivity Timer Apple Watch";
 		};
+		507859C61A2D5BBF0088AEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507859801A2D5BAE0088AEC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 507859C31A2D5BBF0088AEC8;
+			remoteInfo = "Productivity Timer Apple Watch Watch App";
+		};
+		507859CF1A2D5BBF0088AEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507859801A2D5BAE0088AEC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 507859B31A2D5BBF0088AEC8;
+			remoteInfo = "Productivity Timer Apple Watch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		507859D81A2D5BBF0088AEC8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				507859D11A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		507859881A2D5BAE0088AEC8 /* Productivity Timer Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Productivity Timer Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +74,17 @@
 		507859A01A2D5BAE0088AEC8 /* Productivity Timer Apple WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Productivity Timer Apple WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		507859A51A2D5BAE0088AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507859A61A2D5BAE0088AEC8 /* Productivity_Timer_Apple_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Productivity_Timer_Apple_WatchTests.swift; sourceTree = "<group>"; };
+		507859B41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Productivity Timer Apple Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		507859B61A2D5BBF0088AEC8 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		507859BA1A2D5BBF0088AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507859BB1A2D5BBF0088AEC8 /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		507859BC1A2D5BBF0088AEC8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		507859BE1A2D5BBF0088AEC8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		507859C01A2D5BBF0088AEC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		507859C41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Productivity Timer Apple Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		507859CA1A2D5BBF0088AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507859CB1A2D5BBF0088AEC8 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		507859CD1A2D5BBF0088AEC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		507859B11A2D5BBF0088AEC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507859B71A2D5BBF0088AEC8 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +118,9 @@
 			children = (
 				5078598A1A2D5BAE0088AEC8 /* Productivity Timer Apple Watch */,
 				507859A31A2D5BAE0088AEC8 /* Productivity Timer Apple WatchTests */,
+				507859B81A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension */,
+				507859C81A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App */,
+				507859B51A2D5BBF0088AEC8 /* Frameworks */,
 				507859891A2D5BAE0088AEC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +130,8 @@
 			children = (
 				507859881A2D5BAE0088AEC8 /* Productivity Timer Apple Watch.app */,
 				507859A01A2D5BAE0088AEC8 /* Productivity Timer Apple WatchTests.xctest */,
+				507859B41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex */,
+				507859C41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +175,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		507859B51A2D5BBF0088AEC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				507859B61A2D5BBF0088AEC8 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		507859B81A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				507859BC1A2D5BBF0088AEC8 /* InterfaceController.swift */,
+				507859BE1A2D5BBF0088AEC8 /* NotificationController.swift */,
+				507859C01A2D5BBF0088AEC8 /* Images.xcassets */,
+				507859B91A2D5BBF0088AEC8 /* Supporting Files */,
+			);
+			path = "Productivity Timer Apple Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		507859B91A2D5BBF0088AEC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				507859BA1A2D5BBF0088AEC8 /* Info.plist */,
+				507859BB1A2D5BBF0088AEC8 /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		507859C81A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				507859CB1A2D5BBF0088AEC8 /* Interface.storyboard */,
+				507859CD1A2D5BBF0088AEC8 /* Images.xcassets */,
+				507859C91A2D5BBF0088AEC8 /* Supporting Files */,
+			);
+			path = "Productivity Timer Apple Watch Watch App";
+			sourceTree = "<group>";
+		};
+		507859C91A2D5BBF0088AEC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				507859CA1A2D5BBF0088AEC8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +231,12 @@
 				507859841A2D5BAE0088AEC8 /* Sources */,
 				507859851A2D5BAE0088AEC8 /* Frameworks */,
 				507859861A2D5BAE0088AEC8 /* Resources */,
+				507859D81A2D5BBF0088AEC8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				507859D01A2D5BBF0088AEC8 /* PBXTargetDependency */,
 			);
 			name = "Productivity Timer Apple Watch";
 			productName = "Productivity Timer Apple Watch";
@@ -153,6 +261,39 @@
 			productReference = 507859A01A2D5BAE0088AEC8 /* Productivity Timer Apple WatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		507859B31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507859D51A2D5BBF0088AEC8 /* Build configuration list for PBXNativeTarget "Productivity Timer Apple Watch WatchKit Extension" */;
+			buildPhases = (
+				507859B01A2D5BBF0088AEC8 /* Sources */,
+				507859B11A2D5BBF0088AEC8 /* Frameworks */,
+				507859B21A2D5BBF0088AEC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				507859C71A2D5BBF0088AEC8 /* PBXTargetDependency */,
+			);
+			name = "Productivity Timer Apple Watch WatchKit Extension";
+			productName = "Productivity Timer Apple Watch WatchKit Extension";
+			productReference = 507859B41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		507859C31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507859D21A2D5BBF0088AEC8 /* Build configuration list for PBXNativeTarget "Productivity Timer Apple Watch Watch App" */;
+			buildPhases = (
+				507859C21A2D5BBF0088AEC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Productivity Timer Apple Watch Watch App";
+			productName = "Productivity Timer Apple Watch Watch App";
+			productReference = 507859C41A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +309,12 @@
 					5078599F1A2D5BAE0088AEC8 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 507859871A2D5BAE0088AEC8;
+					};
+					507859B31A2D5BBF0088AEC8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					507859C31A2D5BBF0088AEC8 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +333,8 @@
 			targets = (
 				507859871A2D5BAE0088AEC8 /* Productivity Timer Apple Watch */,
 				5078599F1A2D5BAE0088AEC8 /* Productivity Timer Apple WatchTests */,
+				507859B31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension */,
+				507859C31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +354,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507859B21A2D5BBF0088AEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507859C11A2D5BBF0088AEC8 /* Images.xcassets in Resources */,
+				507859C51A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507859C21A2D5BBF0088AEC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507859CC1A2D5BBF0088AEC8 /* Interface.storyboard in Resources */,
+				507859CE1A2D5BBF0088AEC8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +396,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		507859B01A2D5BBF0088AEC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507859BF1A2D5BBF0088AEC8 /* NotificationController.swift in Sources */,
+				507859BD1A2D5BBF0088AEC8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +412,16 @@
 			isa = PBXTargetDependency;
 			target = 507859871A2D5BAE0088AEC8 /* Productivity Timer Apple Watch */;
 			targetProxy = 507859A11A2D5BAE0088AEC8 /* PBXContainerItemProxy */;
+		};
+		507859C71A2D5BBF0088AEC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 507859C31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch Watch App */;
+			targetProxy = 507859C61A2D5BBF0088AEC8 /* PBXContainerItemProxy */;
+		};
+		507859D01A2D5BBF0088AEC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 507859B31A2D5BBF0088AEC8 /* Productivity Timer Apple Watch WatchKit Extension */;
+			targetProxy = 507859CF1A2D5BBF0088AEC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Productivity Timer Apple Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Productivity Timer Apple Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +578,64 @@
 			};
 			name = Release;
 		};
+		507859D31A2D5BBF0088AEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Productivity_Timer_Apple_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Productivity Timer Apple Watch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		507859D41A2D5BBF0088AEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Productivity_Timer_Apple_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Productivity Timer Apple Watch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		507859D61A2D5BBF0088AEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Productivity Timer Apple Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		507859D71A2D5BBF0088AEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Productivity Timer Apple Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +661,22 @@
 			buildConfigurations = (
 				507859AE1A2D5BAE0088AEC8 /* Debug */,
 				507859AF1A2D5BAE0088AEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		507859D21A2D5BBF0088AEC8 /* Build configuration list for PBXNativeTarget "Productivity Timer Apple Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507859D31A2D5BBF0088AEC8 /* Debug */,
+				507859D41A2D5BBF0088AEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		507859D51A2D5BBF0088AEC8 /* Build configuration list for PBXNativeTarget "Productivity Timer Apple Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507859D61A2D5BBF0088AEC8 /* Debug */,
+				507859D71A2D5BBF0088AEC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
